@@ -1,0 +1,109 @@
+@import "../../styles/main.scss";
+
+.recentlyUsed {
+  .title {
+    margin-bottom: $space-40;
+  }
+
+  .ProductsCatalogWidget {
+    position: relative;
+    .banner {
+      display: none;
+      &.active {
+        display: block;
+      }
+      background-color: $brand-2-lighten;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 16px;
+      width: 120px;
+      padding: 2px 10px;
+      border-top-left-radius: 4px;
+      border-bottom-right-radius: 10px;
+    }
+    @include card;
+    // margin: 0 30px 30px 0;
+    padding-top: $space-50;
+    // padding-bottom: ;
+
+    img {
+      width: 40%;
+      margin: 0 0 $space-20;
+    }
+    h4 {
+      margin-bottom: $space-30;
+    }
+    p {
+      @include body-sm-regular;
+      color: $gray-dark;
+      margin-bottom: $space-10;
+      &.description {
+        color: $gray-darker;
+      }
+      span {
+        font-weight: $semibold;
+        color: $gray-darker;
+      }
+    }
+    .launch {
+      margin-top: $space-30;
+      button {
+        @include button-secondary;
+        margin-right: $space-30;
+      }
+      a {
+        @include cta-link;
+        color: $brand-2;
+        &:hover {
+          color: $brand-2-darken;
+        }
+      }
+    }
+  }
+}
+
+.slick-list {
+  padding: 1px;
+  margin: 0 -15px;
+  // margin-right: -170px;
+  // margin-left: -170px;
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 140px;
+  //   height: 100%;
+  //   background: #fff;
+  //   opacity: 0.7;
+  // }
+
+  .slick-track {
+    display: flex;
+
+    .slick-slide {
+      height: auto;
+      margin: 0 15px;
+
+      > div,
+      .ProductsCatalogWidget {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.slick-next:not(.slick-disabled) {
+  width: 40px;
+  height: 40px;
+  right: -35px;
+  color: $gray;
+}
+
+.slick-prev:not(.slick-disabled) {
+  width: 40px;
+  height: 40px;
+  left: -35px;
+  color: $gray;
+}

@@ -1,0 +1,18 @@
+@import '../../styles/main.scss';
+
+.ProjectSelect {
+  h1 {
+    @include header-h1;
+    margin-top: $space-80;
+    margin-bottom: $space-60;
+  }
+  .products {
+    margin-bottom: $space-40;
+  }
+  p {
+    @include body-regular;
+    a {
+      @include cta-link;
+    }
+  }
+}

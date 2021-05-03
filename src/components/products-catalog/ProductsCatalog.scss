@@ -1,0 +1,59 @@
+@import '../../styles/main.scss';
+
+.productsCatalog {
+
+  h2 {
+    @include header-h2;
+  }
+  
+  h4 {
+    @include header-h4;
+  }
+
+  h2 {
+    margin: $space-80 0 $space-30;
+
+    span {
+      color: $gray-dark;
+      font-weight: $regular;
+    }
+  }
+
+  .pills {
+    margin-bottom: $space-30;
+
+    p {
+      @include body-regular;
+      margin-right: $space-20;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        @include body-sm-semibold;
+        padding: 8px 16px;
+        color: $brand-3;
+        border: 1px solid $gray-light;
+        border-radius: 20px;
+        margin-right: $space-20;
+        cursor: pointer;
+
+        &:hover {
+          color: $brand-3-darken;
+          border: 1px solid $brand-3-darken;
+        }
+
+        &.active {
+          background-color: $brand-3-lighten;
+          border: 1px solid $brand-3-darken;
+        }
+      }
+    }
+  }
+  .row {
+    margin: 0;
+  }
+}

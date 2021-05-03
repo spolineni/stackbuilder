@@ -1,0 +1,126 @@
+@import '../../styles/main.scss';
+
+.app-header {
+  .primary-navbar {
+    background-color: $brand-1;
+    height: 100px;
+    padding: 0;
+
+    .navbar-brand {
+      padding: 0;
+    }
+
+    .header-logo {
+      width: 163px;
+      margin: 25px 0px;
+    }
+
+    a {
+      @include body-semibold;
+      color: #ffffff;
+      cursor: pointer;
+      &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+      &.new-product {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-decoration: none;
+        button {
+          @include button-primary;
+          svg {
+            width: 16px;
+            height: 16px;
+            margin-right: $space-10;
+            vertical-align: text-bottom;
+          }
+        }
+      }
+    }
+
+    .dropdown-menu {
+      @include dropdown;
+
+      .selected {
+        color: #2a6ebb;
+        font-weight: $semibold;
+      }
+
+      .contact-admin {
+        @include cta-link;
+        font-weight: $regular;
+        padding: 0;
+      }
+    }
+    .user-dropdown {
+      a {
+        color: $gray-darker;
+        font-weight: $regular;
+        text-decoration: none;
+        padding: 8px 16px;
+        &:active {
+          background-color: #ffffff;
+        }
+      }
+    }
+    ul {
+      li {
+        &:last-child {
+          a.nav-link {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .secondary-navbar {
+    background-color: $brand-3-lighten;
+    height: 40px;
+    padding: 0;
+    ul {
+      li {
+        a {
+          padding: 0;
+          @include body-semibold;
+          color: $gray-dark;
+          line-height: 37px;
+          &:hover{
+            color: $gray-darker;
+          }
+          &.active {
+            color: $brand-1;
+            border-bottom: 2px solid $brand-1;
+          }
+        }
+        &:last-child {
+          margin-left: $space-30;
+        }
+      }
+    }
+  }
+  .alert-container{
+    &.success {
+      background-color: $success-lighter;
+    }
+    &.error {
+      background-color: $error-lighter;
+    }
+    &.warning {
+      background-color: $warning-lighter;
+    }
+    .alert {
+      @include body-sm-semibold;
+      background-color: transparent;
+      border: none;
+      padding:$space-15 40px $space-15 0;
+      margin: 0 auto;
+      button {
+        padding:$space-10 0;
+        color: #000;
+        opacity: 1;
+      }
+    }
+  }
+  
+}

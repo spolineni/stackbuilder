@@ -1,0 +1,55 @@
+@import "../../styles/main.scss";
+
+table.product-table {
+  th {
+    @include body-semibold;
+    border-top: none;
+    border-bottom: 1px solid $gray-light;
+    padding: $space-20 $space-10;
+  }
+  .productRow {
+    td {
+      @include body-regular;
+      border-bottom: 1px solid $gray-light;
+      border-top: none;
+      padding: $space-20 $space-10;
+
+      .status {
+        @include status-badges;
+        vertical-align: middle;
+      }
+
+      img {
+        width: 16px;
+      }
+      .dropdown {
+        .dropdown-menu {
+          @include dropdown;
+          width: 144px;
+        }
+        svg {
+          color: $gray-dark;
+          font-size: 40px;
+          padding: 6px;
+          border: 1px solid transparent;
+          &:hover {
+            color: #2a6ebb;
+            border: 1px solid #2a6ebb;
+            border-radius: 4px;
+          }
+        }
+
+        &.show {
+          svg {
+            border: 1px solid $brand-1-darken;
+            border-radius: 4px;
+          }
+        }
+      }
+      &:last-child {
+        padding: 7px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import "../../styles/main.scss";
+
+.ProvisionedProductDetails {
+  h1 {
+    @include header-h1;
+    margin: $space-80 0 $space-30;
+    button {
+      @include button-secondary;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      margin-left: $space-30;
+      vertical-align: bottom;
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .action-buttons {
+    margin-bottom: $space-30;
+    button {
+      @include button-primary;
+      margin-right: $space-05;
+    }
+  }
+  h3 {
+    @include header-h3;
+    margin-bottom: $space-30;
+  }
+  .status {
+    @include status-badges;
+  }
+  p {
+    @include body-regular;
+    color: $gray-dark;
+    margin-bottom: $space-05;
+    span {
+      margin-right: $space-10;
+      font-weight: $semibold;
+      color: $gray-darker;
+      &.d-block {
+        margin-bottom: $space-10;
+      }
+    }
+    a {
+      @include cta-link;
+    }
+  }
+  .product-details {
+    margin-bottom: $space-60;
+  }
+  .events {
+    .event-status {
+      span {
+        margin-right: $space-10;
+      }
+    }
+    table {
+      th {
+        @include body-semibold;
+        border-top: none;
+        border-bottom: 1px solid $gray-light;
+        padding: $space-20 $space-10;
+      }
+    }
+    .title {
+      color: $gray-darker;
+      font-weight: $semibold;
+    }
+  }
+}
+
+
+.modal-primary {
+  @include button-primary;
+}
+.modal-secondary {
+  @include button-secondary;
+}

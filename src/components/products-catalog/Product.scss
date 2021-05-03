@@ -1,0 +1,64 @@
+@import "../../styles/main.scss";
+
+.product {
+  .banner {
+    display: none;
+    &.active {
+      display: block;
+    }
+    background-color: $brand-2-lighten;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 16px;
+    width: 120px;
+    padding: 2px 10px;
+    // border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+  }
+  @include card;
+  margin: 0 30px 30px 0;
+
+  img {
+    width: 40%;
+    margin: $space-20 0;
+    display: block;
+  }
+
+  h4 {
+    margin-bottom: $space-30;
+  }
+
+  p {
+    @include body-sm-regular;
+    color: $gray-dark;
+    span {
+      font-weight: $semibold;
+      color: $gray-darker;
+    }
+    &.description {
+      color: $gray-darker;
+      margin: $space-10 0 $space-30;
+    }
+  }
+
+  .launch {
+    margin-top: $space-30;
+    button {
+      @include button-secondary;
+      margin-right: $space-30;
+      &.disable-button {
+        &:hover {
+          border: 1px solid $gray-light;
+        }
+      }
+    }
+    a {
+      @include cta-link;
+      color: $brand-2;
+      &:hover {
+        color: $brand-2-darken;
+      }
+    }
+  }
+}

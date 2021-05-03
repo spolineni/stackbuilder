@@ -1,0 +1,48 @@
+@import "../../styles/main.scss";
+
+.products-grid {
+  .row {
+    margin-bottom: -30px;
+  }
+  .myProvisonedProducts {
+
+    .col-md-12 {
+      @include card;
+      height: 100%;
+    }
+  
+    margin-bottom: 30px;
+  
+    .status {
+      @include status-badges;
+      margin-bottom: $space-15;
+    }
+  
+    .type {
+      @include body-sm-regular;
+      margin-top: $space-30;
+      color: $gray-dark;
+    }
+  
+    .id {
+      @include body-regular;
+      margin: $space-10 0 $space-30;
+    }
+  
+    .createdOn {
+      @include body-sm-regular;
+      color: $gray-dark;
+      margin-bottom: $space-30;
+  
+      span {
+        color: $gray-darker;
+        font-weight: $semibold;
+      }
+    }
+    button {
+      @include button-secondary;
+    }
+  }
+}
+
+

@@ -1,0 +1,73 @@
+@import "../../styles/main.scss";
+
+.homepage {
+  h1 {
+    @include header-h1;
+  }
+
+  h3 {
+    @include header-h3;
+  }
+
+  h4 {
+    @include header-h4;
+  }
+
+  h6 {
+    @include header-h6;
+  }
+
+  .provisionedProducts {
+    .header {
+      margin: $space-80 0 $space-30;
+
+      h4 {
+        margin-right: $space-30;
+
+        span {
+          color: $gray-dark;
+          font-weight: $regular;
+        }
+      }
+
+      button {
+        a {
+          color: #fff;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        @include button-primary;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          margin-right: $space-10;
+          vertical-align: text-bottom;
+        }
+      }
+
+      p {
+        @include body-regular;
+        margin-right: $space-20;
+      }
+
+      .viewBy {
+        svg {
+          color: $gray-dark;
+          font-size: 40px;
+          padding: 6px;
+          border: 1px solid transparent;
+
+          &:hover {
+            color: #2a6ebb;
+            border: 1px solid #2a6ebb;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}

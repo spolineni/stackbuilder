@@ -1,0 +1,67 @@
+@import '../../styles/main.scss';
+
+.Profile {
+  h1 {
+    @include header-h1;
+    margin-top: $space-80;
+    margin-bottom: $space-60;
+  }
+
+  h6 {
+    @include header-h6;
+    margin-bottom: $space-15;
+  }
+
+  .profile-content {
+    >svg {
+      width: 170px;
+      height: 170px;
+      margin-right: $space-40;
+      color: $gray-lighter;
+    }
+
+    p {
+      @include body-regular;
+      margin-bottom: $space-15;
+      color: $gray-dark;
+
+      span {
+        font-weight: $semibold;
+        color: $gray-darker;
+      }
+    }
+
+    .userInfo {
+      margin-top: 26px;
+
+      .admin {
+        margin-top: $space-30;
+
+        p {
+          margin-bottom: 0;
+          color: $gray-darker;
+        }
+
+        a {
+          @include cta-link;
+        }
+      }
+    }
+
+    .all-projects {
+      margin-left: 149px;
+      margin-top: 26px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          @include body-regular;
+          @include cta-link;
+          margin-bottom: $space-10;
+        }
+      }
+    }
+  }
+}

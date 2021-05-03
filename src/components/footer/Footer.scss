@@ -1,0 +1,63 @@
+@import '../../styles/main.scss';
+
+.footer {
+  margin-top: 96px;
+
+  .top {
+    background-color: $brand-3-lighten;
+    padding: $space-30 0;
+
+    .logo {
+      img {
+        width: 84px;
+      }
+    }
+
+    .footer-links {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          @include body-regular;
+          @include screen(max, 767px) {
+            font-size: 12px;
+          }
+          margin-left: 41px;
+          a {
+            color: $gray-darker;
+            &:hover {
+              text-decoration: underline;
+              color: $brand-3-darken !important;
+            }
+          }
+          &.static {
+            a {
+              color: $gray-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    background-color: $brand-1;
+    padding: $space-30 0;
+
+    .ness-logo {
+      img {
+        width: 100px;
+        margin-right: $space-40;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 16px;
+      margin: 0;
+    }
+  }
+}

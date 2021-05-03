@@ -1,0 +1,72 @@
+@import '../../styles/main.scss';
+
+.login {
+
+  h1 {
+    @include header-h1;
+    margin-top: $space-80;
+    margin-bottom: $space-60;
+  }
+
+  .form-wrapper {
+    width: 335px;
+    border-right: 1px solid $gray-light;
+    display: inline-block;
+    @include screen(max, 768px) {
+      border-right: none;
+      border-bottom: 1px solid $gray-light;
+    }
+
+    form {
+      width: 271px;
+    }
+  
+    label {
+      @include body-regular;
+      margin: 0;
+      padding-bottom: 8px;
+    }
+  
+    input {
+      height: 40px;
+      border-color: $gray-light;
+      box-shadow: none !important;
+      margin-bottom: $space-30;
+  
+      &:focus {
+        border-color: $brand-3;
+        border-width: 2px;
+      }
+    }
+  
+    button {
+      @include button-primary;
+      margin-bottom: $space-40;;
+    }
+
+    p {
+      @include body-regular;
+      @include cta-link;
+      margin-bottom: $space-60;
+    }
+  }
+
+  .request-access {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: $space-80;
+    @include screen(max, 768px) {
+      margin: $space-60 0 0 0;
+    }
+
+    p{
+      @include body-regular;
+
+      &:last-child {
+        @include cta-link;
+      }
+    }
+
+  }
+
+}

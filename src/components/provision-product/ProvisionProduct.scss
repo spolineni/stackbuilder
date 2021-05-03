@@ -1,0 +1,79 @@
+@import "../../styles/main.scss";
+
+.provision-product {
+  h1 {
+    @include header-h1;
+    margin-top: $space-80;
+    margin-bottom: $space-60;
+  }
+  label {
+    @include label;
+  }
+  .form-group {
+    margin-bottom: $space-30;
+    padding: 0;
+  }
+  input {
+    @include input;
+    margin-bottom: $space-10;
+  }
+  h3 {
+    @include header-h3;
+    margin-right: $space-40;
+  }
+  p {
+    @include body-regular;
+    &.product-description {
+      margin-bottom: $space-30;
+    }
+    &.param-description {
+      color: $gray-dark;
+    }
+  }
+  button {
+    @include button-primary;
+  }
+  .step-title {
+    margin-bottom: $space-30;
+    p {
+      @include cta-link;
+    }
+  }
+  .step-1 {
+    margin-bottom: $space-80;
+  }
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: translateY(15%);
+  
+}
+.alert-enter-active {
+  
+  transition-timing-function: ease;
+  
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transition-timing-function: ease;
+  transition: 0.2s;
+  transform: translateY(-20%);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
