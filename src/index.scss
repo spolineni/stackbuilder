@@ -1,0 +1,21 @@
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@import './styles/main.scss';
+
+
+body {
+  font-family: $font-family-2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-family-1;
+}
+
+@include screen(min, 576px) {
+  .container {
+    padding: 0;
+  }
+}
+

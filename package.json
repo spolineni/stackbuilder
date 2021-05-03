@@ -1,0 +1,79 @@
+{
+  "name": "react-redux-scss-boilerplate",
+  "description": "A react application boilerplate with react-redux implementation",
+  "main": "src/index.js",
+  "version": "0.1.0",
+  "private": false,
+  "author": "Çağrı Çakır <cagcak@outlook.com> (https://github.com/cagcak)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cagcak/react-redux-scss-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "react-redux",
+    "scss",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cagcak/react-redux-scss-boilerplate/issues"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.8.2",
+    "@material-ui/icons": "^4.5.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.3",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.17",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/reactstrap": "^8.2.0",
+    "aws-amplify": "^2.2.1",
+    "aws-sdk": "^2.601.0",
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-lodash": "^0.1.2",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "react-slick": "^0.25.2",
+    "react-transition-group": "^4.3.0",
+    "reactstrap": "^8.2.0",
+    "redux": "^4.0.4",
+    "redux-immutable-state-invariant": "2.1.0",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "redux-devtools": "^3.5.0"
+  }
+}
